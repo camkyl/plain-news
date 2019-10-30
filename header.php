@@ -17,11 +17,19 @@
             <h1>News of</h1>
             <h1>Silicon Valley</h1>
         </div>
-        
-        <div class="hamburgerMenu"> <!--Has no function, only for demonstration-->
+
+        <div class="hamburgerMenu"> <!--For smartphones and tablets. Has no function, only for demonstration-->
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
         </div>
     </header>
+
+    <nav> <!--For laptops/large screens. Has no function, only for demonstration-->
+        <a href="#">Company</a>
+        <a href="#">Tech</a>
+        <a href="#">Fun</a>
+        <a href="#">Design</a>
+        <a href="#">More</a>
+    </nav>
 
