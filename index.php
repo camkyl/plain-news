@@ -9,8 +9,10 @@
     <article>
         <div class="main">
             <img src="<?php echo $article['image']; ?>" alt="<?php echo $article['title']?>" loading="lazy" class="articleImage">
-            <h2><?php echo $article['title']; ?></h2>
-            <p class="content"><?php echo $article['content']; ?></p>
+            <div class="content">
+                <h2><?php echo $article['title']; ?></h2>
+                <p class="text"><?php echo $article['content']; ?></p>
+            </div>
         </div>
 
         <div class="bottomInfo">
