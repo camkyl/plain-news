@@ -10,7 +10,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 header {
@@ -18,14 +17,14 @@ header {
     width: 100vw;
 }
 
-/*first line of header*/
+/*first line (New of) of heading*/
 .heading > h1 { 
     font-family: 'Old Standard TT';
     font-size: 20px;
     margin: 20px 0px -10px 20px; /*top right bottom left*/
 }
 
-/*second line of header*/
+/*second line (Silicon Valley) of heading*/
 .heading > h1:nth-child(2) {
     font-family: 'Arial Black';
     text-transform: uppercase;
@@ -33,19 +32,35 @@ header {
     font-size: 30px;
     margin: 0px 0px 10px 10px; /*top right bottom left*/
     overflow: hidden;
-
 }
 
+
+nav { /*only visible on laptops/large screens*/
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+nav a {
+    font-family: 'Roboto';
+    color: #F4D6BC;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #F8E4CC;
+    border-radius: 2px;
+    padding: 10px 30px;
+}
+
+nav a:hover {
+    box-shadow: inset 0px 0px 1px 1px #F4D6BC;
+}
+
+/*contains all articles*/
 section {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.articleImage {
-    width: 40vw;
-    height: auto;
-    display: block;
+    flex-wrap: wrap; /*so that the articles end up in two rows*/
+    justify-content: space-evenly; /*gives space in between the articles*/
 }
 
 h2, h4 {
@@ -69,6 +84,16 @@ p {
     font-family: 'Roboto';
     font-size: 14px;
     color: rgb(108, 108, 108);
+}
+
+article {
+    height: auto;
+}
+
+.articleImage {
+    width: 40vw;
+    height: auto;
+    display: block;
 }
 
 .bottomRight {
@@ -101,22 +126,39 @@ p {
     padding: 5px 10px;
 }
 
-@media screen and (min-width: 992px) { /*big screens*/
+/*large screens*/
+@media screen and (min-width: 850px) { 
 
     body {
-        padding: 0px 40px;
+        padding: 0px 60px;
+    }
+
+    header {
+        margin-left: 16vw;
+    }
+
+    .hamburgerMenu {
+        display: none;
     }
 
     article {
         background-color: white;
         width: 40vw;
-        margin: 20px;
+        margin: 20px 0px;
         box-shadow: 0 5px 20px -1px rgb(230, 230, 230);
     } 
 
-}
+    h2 {
+        margin: 10px;
+    }
 
-@media screen and (min-width: 600px) and (max-width: 992px) { /*tablets*/
+    .text {
+        margin: 0px 10px;
+    }
+
+}
+/*tablets*/
+@media screen and (min-width: 600px) and (max-width: 850px) { 
 
     header {
         display: flex;
@@ -136,7 +178,17 @@ p {
         background-color: black;
         margin: 2px 20px 5px 0px; /*top right bottom left*/
     }
-    
+
+    nav {
+        display: none; /*hides the nav on tablets*/
+    }
+
+    article {
+        border-top: 2px solid #447294;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
     .main {
         display: flex; 
     }
@@ -144,20 +196,19 @@ p {
     .articleImage {
         display: block;
         max-width: 40%;
-        height: 10em;
+        height: auto;
         margin-right: 20px;
     }
 
-    article {
-        min-width: 320px;
-        border-top: 2px solid #447294;
-        padding: 10px;
-        margin-bottom: 10px;
+    .content {
+        display: flex;
+        flex-direction: column;
     }
 
 }
 
-@media screen and (max-width: 600px) { /*smartphones*/
+/*smartphones*/
+@media screen and (max-width: 600px) { 
     
     header {
         display: flex;
@@ -176,6 +227,10 @@ p {
         height: 3px;
         background-color: black;
         margin: 2px 20px 5px 0px; /*top right bottom left*/
+    }
+
+    nav {
+        display: none; /*hides the nav on smartphones*/
     }
 
     h2 {
@@ -199,7 +254,7 @@ p {
         margin-bottom: 15px;
     }
 
-    .content {
+    .text {
         margin: 10px;
     }
     
