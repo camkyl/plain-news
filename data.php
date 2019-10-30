@@ -1,5 +1,8 @@
 <?php
 
+declare(strict_types=1);
+
+
 // Array containing all authors.
 
 $authors = [
@@ -24,6 +27,7 @@ $authors = [
     'fullName' => 'Dinesh Chugtai'
     ],
 ];
+
 
 // Array containing all articles.
 
@@ -114,5 +118,4 @@ $articles = [
 // Variables
 
 $title = 'News of Silicon Valley';
-
 
