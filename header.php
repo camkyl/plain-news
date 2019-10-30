@@ -1,3 +1,5 @@
+<?php require __DIR__. '/data.php' ;?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +8,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
     <link rel="stylesheet" href="style.css">
-    <style>@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Nunito+Sans|Old+Standard+TT&display=swap');</style> 
-    <title>News of Silicon Valley</title>
+    <style>@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Nunito+Sans|Old+Standard+TT|Lato|Roboto|Jomolhari&display=swap');</style> 
+    <title><?php echo $title; ?></title>
 </head>
 <body>
-    <div>
     <header>
-        <h1>News of Silicon Valley</h1>
+        <div class="heading">
+            <h1>News of</h1>
+            <h1>Silicon Valley</h1>
+        </div>
+        
+        <div class="hamburgerMenu"> <!--Has no function, only for demonstration-->
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
     </header>
 

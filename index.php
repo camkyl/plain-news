@@ -1,34 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="style.css">
-    <style>@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Old+Standard+TT&display=swap');</style> 
-    <title>The Silicon Valley Post</title>
-</head>
-<body>
-    
-<?php require __DIR__.'/data.php' ?>
 
+<?php require __DIR__.'/data.php' ?>
+<?php require __DIR__.'/functions.php' ?>
+<?php require __DIR__.'/header.php' ?>
+
+<section>
 <?php foreach ($articles as $article) : ?>
 
-<h2><?php echo $article['title']; ?></h2>
-<p><?php echo $article['content']; ?></p>
-<p><?php echo $article['date']; ?></p>
+    <article>
+        <div class="main">
+            <img src="<?php echo $article['image']; ?>" alt="<?php echo $article['title']?>" loading="lazy" class="articleImage">
+            <h2><?php echo $article['title']; ?></h2>
+            <p class="content"><?php echo $article['content']; ?></p>
+        </div>
 
+        <div class="bottomInfo">
+            <div class="bottomLeft">
+                <h6>Author:</h6>
+                <h4><?php echo $article['author']; ?></h4>
+            </div>
+            <div class="bottomRight">
+                <p class="date"><?php echo $article['publishDate']; ?></p>
+                <div class="liking">
+                    <img src="/images/heart.svg" loading="lazy" class="heart">
+                    <p class="likes"><?php echo randomLikes(); ?></p>
+                </div>
+            </div>
+        </div>
+
+        
+    </article>
 
 <?php endforeach; ?>
 
+</section><!--End of section starting on line 13-->
 
 
 
-
-</body>
-</html>
-
-
-
-
+<?php require __DIR__.'/footer.php' ?>
