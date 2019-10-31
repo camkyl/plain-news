@@ -1,3 +1,5 @@
+<?php declare(strict_types=1); ?>
+
 <?php require __DIR__. '/data.php' ;?>
 
 <!DOCTYPE html>

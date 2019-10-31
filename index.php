@@ -1,9 +1,11 @@
+<?php declare(strict_types=1); ?>
+
 
 <?php require __DIR__.'/data.php' ?>
 <?php require __DIR__.'/functions.php' ?>
 <?php require __DIR__.'/header.php' ?>
 
-<?php usort($articles, 'sortByLatestDate'); // sort array with given user-defined function ?>
+<?php usort($articles, 'sortByLatestDate'); // sort array $articles with given user-defined function ?>
 
 <section>
 <?php foreach ($articles as $article) : ?>
@@ -37,7 +39,5 @@
 <?php endforeach; ?>
 
 </section><!--End of section starting on line 13-->
-
-
 
 <?php require __DIR__.'/footer.php' ?>
