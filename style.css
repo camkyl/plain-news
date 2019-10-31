@@ -31,7 +31,7 @@ header {
 .heading > h1 { 
     font-family: 'Old Standard TT';
     font-size: 20px;
-    margin: 20px 0px -10px 20px; /*top right bottom left*/
+    margin: 20px 0px -10px 20px; 
 }
 
 /*second line (Silicon Valley) of heading*/
@@ -40,7 +40,7 @@ header {
     text-transform: uppercase;
     font-weight: 100;
     font-size: 30px;
-    margin: 0px 0px 10px 10px; /*top right bottom left*/
+    margin: 0px 0px 10px 10px; 
     overflow: hidden;
 }
 
@@ -97,7 +97,7 @@ p {
 }
 
 article {
-    height: auto; /*should adjust to content???*/
+    height: auto; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
