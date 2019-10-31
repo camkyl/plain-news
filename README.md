@@ -33,7 +33,13 @@ The project should use the following PHP functionality:
 
 ## Preview
 
+Desktop version:
+
 <img src="images/preview.png" width="100%">
+
+Mobile version:
+
+<img src="images/mobilepreview.png" width="30%">
 
 ## Tested by
 
