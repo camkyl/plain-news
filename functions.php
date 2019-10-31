@@ -14,9 +14,10 @@ declare(strict_types=1);
 
 
 function sortByLatestDate (array $a, array $b): bool {
-    return strtotime($a['publishDate']) < strtotime($b['publishDate']); // strtotime() changes a given date string into timestamp
+    return strtotime($a['publishDate']) < strtotime($b['publishDate']); 
 }
 
+// strtotime() changes a given date string into timestamp
 
 
 
