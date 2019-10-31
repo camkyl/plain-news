@@ -35,11 +35,11 @@ The project should use the following PHP functionality:
 
 Desktop version:
 
-<img src="images/preview.png" width="100%">
+<img src="public/images/preview.png" width="100%">
 
 Mobile version:
 
-<img src="images/mobilepreview.png" width="30%">
+<img src="public/images/mobilepreview.png" width="30%">
 
 ## Tested by
 
