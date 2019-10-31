@@ -33,7 +33,7 @@ The project should use the following PHP functionality:
 
 ## Preview
 
-<img src="preview.png" width="100%">
+<img src="images/preview.png" width="100%">
 
 ## Tested by
 
