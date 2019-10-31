@@ -10,7 +10,9 @@ This is my first programming assignment at YRGO. The assignment is to create a s
 
 Clone or fork this repository and start a PHP server in your terminal by entering:
 
-- $ php -S localhost:8000
+```
+$ php -S localhost:8000
+```
 
 ## Requirements:
 
