@@ -12,6 +12,9 @@
     <title><?php echo $title; ?></title>
 </head>
 <body>
+    <div class="top">
+
+    </div>
     <header>
         <div class="heading">
             <h1>News of</h1>
