@@ -17,7 +17,7 @@ function sortByLatestDate (array $a, array $b): bool {
     return strtotime($a['publishDate']) < strtotime($b['publishDate']); // strtotime() changes a given date string into timestamp
 }
 
-usort($articles, 'sortByLatestDate'); // sort array with given user-defined function
+
 
 
 /**
