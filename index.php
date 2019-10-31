@@ -3,6 +3,8 @@
 <?php require __DIR__.'/functions.php' ?>
 <?php require __DIR__.'/header.php' ?>
 
+<?php usort($articles, 'sortByLatestDate'); // sort array with given user-defined function ?>
+
 <section>
 <?php foreach ($articles as $article) : ?>
 
