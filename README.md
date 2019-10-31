@@ -16,6 +16,8 @@ $ php -S localhost:8000
 
 ## Requirements:
 
+The project should use the following PHP functionality:
+
 - Variables
 - Multiple data types
 - Arrays
@@ -29,6 +31,10 @@ $ php -S localhost:8000
 - HTML
 - CSS
 
+## Preview
+
+
+
 ## Tested by
 
 - Alexander Gustafsson Flink
@@ -38,7 +44,7 @@ $ php -S localhost:8000
 
 - In your sortByLatestDate function, I would personally put the explanatory comment outside of the function, since it’s not actually part of the actual function itself. :heavy_check_mark:
 - On line 43 of your style.css you’ve commented “/top right bottom left/” next to your margin property. It could be left out of the master version of your project, since the people inspecting your code will probably be developers who will most likely know that that is how it works. :heavy_check_mark:
-- On line 15 of your css file you have commented out a chunk of code with “maybe”. It could also be left out of your master version of the project on GitHub.
+- On line 15 of your css file you have commented out a chunk of code with “maybe”. It could also be left out of your master version of the project on GitHub. :heavy_check_mark:
 - With the nav-bar it would be cool to see it working when you click the different buttons.
 - In your title tag you probably dont have to echo the variable from your data file, I think it’s something thats ok to “hard code”.
 
