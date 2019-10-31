@@ -46,7 +46,7 @@ Mobile version:
 - Alexander Gustafsson Flink
 - Mikaela Lundsgård
 
-## Comments by Henric
+## Code review by Henric
 
 - In your sortByLatestDate function, I would personally put the explanatory comment outside of the function, since it’s not actually part of the actual function itself. :heavy_check_mark:
 - On line 43 of your style.css you’ve commented “/top right bottom left/” next to your margin property. It could be left out of the master version of your project, since the people inspecting your code will probably be developers who will most likely know that that is how it works. :heavy_check_mark:
