@@ -15,7 +15,11 @@
 </head>
 <body>
     <div class="top">
-
+        <img src="images/SV.svg" alt="Silicon Valley" title="Silicon Valley" loading="lazy">
+        <div class="topRight">
+            <img src="images/search2.svg" alt="search" title="Search" loading="lazy">
+            <img src="images/notification2.svg" alt="Sign up for notifications" title="Sign up for notifications" loading="lazy">
+        </div>
     </div>
     <header>
         <div class="heading">

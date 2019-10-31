@@ -12,19 +12,37 @@ body {
     align-items: center;
 }
 
-/* MAYBE
 .top {
     width: 100vw;
-    background-color: ;
+    background-color: white;
     height: 60px;
     border-bottom: 0px solid #447294;
     box-shadow: 0 1px 10px 1px #dedede;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
 }
-*/
+
+.top >img:nth-child(1) {
+    margin-left: 10px;
+    width: 3em;
+}
+
+.topRight {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.topRight > img {
+    margin: 10px;
+    width: 1.5em;
+}
 
 header {
     display: flex;
     width: 100vw;
+    margin-top: 60px;
 }
 
 /*first line (New of) of heading*/
@@ -32,6 +50,7 @@ header {
     font-family: 'Old Standard TT';
     font-size: 20px;
     margin: 20px 0px -10px 20px; 
+    color: black;
 }
 
 /*second line (Silicon Valley) of heading*/
@@ -42,6 +61,7 @@ header {
     font-size: 30px;
     margin: 0px 0px 10px 10px; 
     overflow: hidden;
+    color: black;
 }
 
 
@@ -151,6 +171,20 @@ article {
         margin-left: 16vw;
     }
 
+    .top >img:nth-child(1) {
+        margin-left: 90px;
+        width: 3em;
+    }
+    
+    .topRight {
+        margin-right: 90px;
+    }
+
+    .topRight > img {
+        margin: 10px;
+        width: 1.5em;
+    }
+
     .hamburgerMenu {
         display: none;
     }
@@ -185,6 +219,16 @@ article {
     header {
         display: flex;
         justify-content: space-between;
+    }
+
+    .top >img:nth-child(1) {
+        margin-left: 10px;
+        width: 3em;
+    }
+    
+    .topRight > img {
+        margin: 10px;
+        width: 1.5em;
     }
 
     .hamburgerMenu {
@@ -240,6 +284,16 @@ article {
     header {
         display: flex;
         justify-content: space-between;
+    }
+
+    .top >img:nth-child(1) {
+        margin-left: 10px;
+        width: 3em;
+    }
+    
+    .topRight > img {
+        margin: 10px;
+        width: 1.5em;
     }
 
     .hamburgerMenu {
