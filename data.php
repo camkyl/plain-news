@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-
 // Array containing all authors.
 
 $authors = [
