@@ -12,27 +12,31 @@
     <title><?php echo $title; ?></title>
 </head>
 <body>
+
     <div class="top">
-        <img src="images/SV.svg" alt="Silicon Valley" title="Silicon Valley" loading="lazy">
+        <img src="images/SV.svg"  alt="Silicon Valley" title="Silicon Valley" loading="lazy">
         <div class="topRight">
             <img src="images/search2.svg" alt="search" title="Search" loading="lazy">
             <img src="images/notification2.svg" alt="Sign up for notifications" title="Sign up for notifications" loading="lazy">
         </div>
     </div>
+    
     <header>
         <div class="heading">
             <h1>News of</h1>
             <h1>Silicon Valley</h1>
         </div>
 
-        <div class="hamburgerMenu"> <!--For smartphones and tablets. Has no function, only for demonstration-->
+        <!--For smartphones and tablets. Has no function, only for demonstration-->
+        <div class="hamburgerMenu"> 
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
         </div>
     </header>
 
-    <nav> <!--For laptops/large screens. Has no function, only for demonstration-->
+    <!--For laptops/large screens. Has no function, only for demonstration-->
+    <nav> 
         <a href="#">Company</a>
         <a href="#">Tech</a>
         <a href="#">Fun</a>

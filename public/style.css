@@ -172,12 +172,12 @@ article {
     }
 
     .top >img:nth-child(1) {
-        margin-left: 90px;
+        margin-left: 100px;
         width: 3em;
     }
     
     .topRight {
-        margin-right: 90px;
+        margin-right: 100px;
     }
 
     .topRight > img {
